@@ -16,10 +16,9 @@ hideInToc: true
 <br>
 
 - <mdi-account-circle /> **Name** - kazu_kichi_67
-- <carbon-book /> **Language** - Java (, Kotlin, Swift, PHP, C++)
-- <carbon-bookmark /> **Skill** - Registered Scrum Master
-- <carbon-bar /> **Hobby** - フットサル, スノボ, 爬虫類, キャンプ, サウナ, ウイスキー, クラフトビール
-- <carbon-activity /> **Interest** - Agile, DDD, Architecture, etc..
+- <carbon-campsite /> **Tent** - グロッケ12 T/C, HIDEOUT-02D, ギリア, サーカスTC
+- <carbon-military-camp /> **Camp Sight** - 荒船パノラマキャンプフィールド
+- <carbon-bar /> **Hobby** - キャンプ, サウナ, ウイスキー, クラフトビール
 
 </div>
 </div>

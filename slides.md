@@ -1,6 +1,7 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
+# colorSchema: light
+background: /takibi.png
 title: My Presentation Template
 class: text-center
 drawings:
@@ -11,9 +12,9 @@ hideInToc: true
 lineNumbers: true
 ---
 
-# My Presentation Template
+# ソロキャンプ 改め 積読消化合宿 がとても良かった話
 
-20yy/mm/dd presentation for XXXX
+2025/09/27-28 presentation for キャンプ場で焚き火を囲んでLT会
 
 @kazu_kichi_67
 
@@ -29,30 +30,91 @@ lineNumbers: true
 </div>
 
 ---
-src: ./pages/who-am-i.md
-hide: false
+layout: image-left
+image: /solo.jpg
 ---
 
+<div class="flex flex-col items-center justify-center h-full">
+  <h1 class="text-3xl font-bold">ソロキャンプに行きたい!!</h1>
+</div>
+
 ---
-hideInToc: true
+layout: image-right
+image: /tsundoku.jpg
 ---
 
-# Agenda
-
-***
-
-<br>
-<Toc maxDepth="2"/>
+<div class="flex flex-col items-center justify-center h-full">
+  <h1 class="text-3xl font-bold">しかし、<span v-mark.circle.orange>積読が</span>・・!!</h1>
+  <p class="mt-4 text-lg">そうゆうことありますよね（圧）</p>
+</div>
 
 ---
 layout: section
 ---
 
-# Section1
+# ならば・・!!
+
+---
+layout: section
+---
+
+<div class="scale-[0.55] w-[80%] origin-top ml-[10%]">
+  <img src="/tsundoku-camp.jpg" />
+</div>
+<h1 class="absolute bottom-[20%] left-1/2 -translate-x-1/2 text-white text-5xl font-bold bg-black/50">
+  ソロキャンプも<br>積読消化も<br>やったら<br>いいじゃん💡
+</h1>
+
+---
+src: ./pages/who-am-i.md
+hide: false
+---
+
+---
+layout: section
+---
+
+<h2 class="absolute" >
+  出発!!
+</h2>
+
+<div class="scale-[0.5] w-[80%] origin-top ml-[15%]">
+  <Tweet id="1863739137079255161"/>
+</div>
+
+---
+layout: section
+---
+
+## 向かうは道志エリア、予約不要の青根キャンプ場へ
+
+---
+layout: section
+---
+
+<h2 class="absolute" >
+  設営
+</h2>
+
+<div class="scale-[0.7] w-[80%] origin-top ml-[15%]">
+  <Tweet id="1863790883390554346"/>
+</div>
+
+---
+layout: none
+---
+
+<div class="absolute scale-[0.8] left-[40%] top-[20%]" >
+  <img src="/car.jpg" />
+</div>
+
+<div class="absolute scale-[0.4] left-[-30%] top-[-40%]" >
+  <img src="/camp-site.jpg" />
+</div>
 
 ---
 
-## List Sample
+# まとめ
 
 ***
 
@@ -60,171 +122,25 @@ layout: section
 
 <v-clicks>
 
-- aaa
-- bbb
-- ccc
+- ソロキャンプは最高!!
+- 最高ついでに、積読も消化しちゃおう!!
+- パートナーとの調整は計画的に。
 
 </v-clicks>
 
-<style>
-  ul {
-    font-size: 18pt;
-  }
-</style>
+---
+layout: iframe-left
 
+# the web page source
+url: https://adventar.org/calendars/11140
 ---
 
-## Table Sample
-
-***
-
-Table Sample.
-
-|        |                              |
-| ------ | ---------------------------- |
-| AAAAAA | aaa                          |
-| BBB    | bbbbbbbb                     |
-| C      | <kbd>ccccccccccccccccc</kbd> |
-
----
-layout: section
----
-
-<div id="highlight-contents">
-highlight!!!
+<div class="flex flex-col items-center justify-center h-full">
+  <h1 class="text-3xl font-bold">おわり</h1>
+  <p class="mt-4 text-lg">
+    <a href="https://adventar.org/calendars/11140" target="_blank" class="text-blue-400 underline">キャンプ x エンジニア Advent Calendar</a> <br>
+    <span v-mark.red>今年もやるので是非！</span>
+  </p>
 </div>
 
-<style>
-  #highlight-contents {
-    font-size: 72pt;
-  }
-</style>
 
----
-layout: section
----
-
-# Section2
-
----
-
-## Code Sample
-
-***
-
-code sample.
-
-```java {*|3|2-4|1,5|*}
-class HelloWorld {
-	public static void main(String[] args) {
-		System.out.println("Hello, world.");
-	}
-}
-```
-
-<style>
-pre.slidev-code {
-    background-color: #1f2020;
-}
-</style>
-
----
-
-## Diagrams Sample
-
-***
-
-diagrams sample.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
----
-
-## Tips
-
-***
-
-The <span v-mark.red><code>code</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange>inline marks</span>
-, powered by [Link](https://roughnotation.com/)
-
-<logos-java class="text-7xl m-3 absolute right-20" />
-
----
-layout: center
-class: text-center
-hideInToc: true
----
-
-# End
-
-<PoweredBySlidev mt-10 />

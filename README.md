@@ -1,4 +1,8 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Presentation Slide for キャンプ場で焚き火を囲んでLT会
+
+Event Page: https://kaitou.connpass.com/event/363314/
+
+# Usage
 
 To start the slide show:
 
